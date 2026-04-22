@@ -1,3 +1,170 @@
-# Donggyu Docs
+---
+title: Donggyu Docs
+description: Editorial-style documentation landing page for Donggyu.
+---
 
-안녕하세요 👋 `Donggyu`입니다.
+<div className="relative isolate -mx-6 -mt-6 overflow-hidden rounded-[2rem] border border-white/70 bg-[radial-gradient(circle_at_top,#fff7db_0%,#f6efe2_32%,#dce7ea_65%,#f4f1ea_100%)] px-6 py-8 text-zinc-950 shadow-[0_30px_90px_rgba(0,0,0,0.12)] sm:-mx-8 sm:px-8 lg:-mx-10 lg:px-10">
+  <div className="pointer-events-none absolute inset-0">
+    <div className="absolute top-[-8rem] left-[-4rem] h-72 w-72 rounded-full bg-amber-300/35 blur-3xl" />
+    <div className="absolute top-24 right-[-5rem] h-80 w-80 rounded-full bg-sky-300/30 blur-3xl" />
+    <div className="absolute bottom-[-7rem] left-1/3 h-72 w-72 rounded-full bg-emerald-300/20 blur-3xl" />
+    <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(24,24,27,0.045)_1px,transparent_1px),linear-gradient(to_bottom,rgba(24,24,27,0.045)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:radial-gradient(circle_at_center,black,transparent_80%)]" />
+  </div>
+
+  <section className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+    <div>
+      <div className="inline-flex items-center gap-2 rounded-full border border-zinc-900/10 bg-white/60 px-4 py-2 text-sm text-zinc-700 shadow-[0_10px_30px_rgba(0,0,0,0.05)] backdrop-blur">
+        <span className="h-2 w-2 rounded-full bg-emerald-500" />
+        Curated notes, references, and structured guides
+      </div>
+
+      <h1 className="mt-8 max-w-4xl font-serif text-5xl leading-[0.92] tracking-[-0.06em] text-zinc-950 sm:text-6xl lg:text-7xl">
+        Enter the
+        <span className="block text-zinc-500">documentation layer</span>
+      </h1>
+
+      <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-700 sm:text-xl">
+        This docs space keeps the same editorial tone as the home landing page,
+        but turns that energy into something more useful: faster scanning,
+        clearer sections, and direct paths into the content.
+      </p>
+
+      <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+        <a
+          href="/docs/info/intro"
+          className="group inline-flex items-center justify-center rounded-full bg-zinc-950 px-7 py-4 text-sm font-semibold text-white no-underline transition hover:-translate-y-1 hover:bg-zinc-800"
+        >
+          Start with Info
+          <span className="ml-3 transition group-hover:translate-x-1">
+            {">"}
+          </span>
+        </a>
+        <a
+          href="/docs/music/intro"
+          className="inline-flex items-center justify-center rounded-full border border-zinc-900/15 bg-white/70 px-7 py-4 text-sm font-semibold text-zinc-800 no-underline backdrop-blur transition hover:-translate-y-1 hover:bg-white"
+        >
+          Explore Music
+        </a>
+      </div>
+
+      <div className="mt-12 grid max-w-2xl gap-4 sm:grid-cols-3">
+        {[
+          { label: "Core Sections", value: "2" },
+          { label: "Docs Route", value: "/docs" },
+          { label: "Experience", value: "Live" }
+        ].map((stat) => (
+          <div
+            key={stat.label}
+            className="rounded-3xl border border-white/70 bg-white/55 p-5 shadow-[0_20px_60px_rgba(20,20,20,0.08)] backdrop-blur transition hover:-translate-y-1"
+          >
+            <p className="text-3xl font-semibold tracking-tight text-zinc-950">
+              {stat.value}
+            </p>
+            <p className="mt-2 text-sm leading-6 text-zinc-600">
+              {stat.label}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <section className="relative">
+      <div className="absolute inset-0 rounded-[2rem] bg-[linear-gradient(135deg,rgba(255,255,255,0.55),rgba(255,255,255,0.12))] blur-2xl" />
+      <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/55 p-5 shadow-[0_30px_90px_rgba(0,0,0,0.12)] backdrop-blur">
+        <div className="flex items-center justify-between border-b border-zinc-900/10 pb-4">
+          <div>
+            <p className="text-xs font-semibold tracking-[0.28em] text-zinc-400 uppercase">
+              Experience Layer
+            </p>
+            <p className="mt-2 text-lg font-semibold text-zinc-950">
+              The docs now open with intention
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <span className="h-3 w-3 rounded-full bg-rose-400" />
+            <span className="h-3 w-3 rounded-full bg-amber-400" />
+            <span className="h-3 w-3 rounded-full bg-emerald-400" />
+          </div>
+        </div>
+
+        <div className="mt-5 space-y-4">
+          <div className="rounded-[1.5rem] bg-zinc-950 p-5 text-white transition hover:-translate-y-1">
+            <p className="text-xs tracking-[0.22em] text-zinc-400 uppercase">
+              Landing Narrative
+            </p>
+            <p className="mt-3 text-2xl font-semibold tracking-tight">
+              Bold typography, soft atmosphere, and a clearer path into real content.
+            </p>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="rounded-[1.5rem] border border-zinc-900/10 bg-amber-50/80 p-5 transition hover:rotate-[-1deg] hover:scale-[1.01]">
+              <p className="text-sm font-semibold text-zinc-900">
+                Guided entry
+              </p>
+              <p className="mt-2 text-sm leading-7 text-zinc-700">
+                New visitors land on something that feels designed, not just generated.
+              </p>
+            </div>
+
+            <div className="rounded-[1.5rem] border border-zinc-900/10 bg-sky-50/80 p-5 transition hover:rotate-[1deg] hover:scale-[1.01]">
+              <p className="text-sm font-semibold text-zinc-900">
+                Better flow
+              </p>
+              <p className="mt-2 text-sm leading-7 text-zinc-700">
+                The landing page now bridges visual identity and actual documentation structure.
+              </p>
+            </div>
+          </div>
+
+          <div className="rounded-[1.5rem] border border-zinc-900/10 bg-white/80 p-5">
+            <div className="flex items-center justify-between text-sm text-zinc-500">
+              <span>Landing Confidence</span>
+              <span>96%</span>
+            </div>
+            <div className="mt-3 h-3 overflow-hidden rounded-full bg-zinc-200">
+              <div className="h-full w-[96%] rounded-full bg-[linear-gradient(90deg,#111827,#0f766e,#f59e0b)]" />
+            </div>
+            <p className="mt-4 text-sm leading-7 text-zinc-700">
+              The first docs screen now feels consistent with the home experience without sacrificing usability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+
+## Start Here
+
+<div className="mt-6 grid gap-4 md:grid-cols-2">
+  <a
+    href="/docs/info/intro"
+    className="block rounded-[1.75rem] border border-zinc-900/10 bg-white/70 p-6 text-zinc-950 no-underline shadow-[0_20px_60px_rgba(20,20,20,0.08)] transition hover:-translate-y-1 hover:bg-white"
+  >
+    <p className="text-xs font-semibold tracking-[0.28em] text-zinc-400 uppercase">
+      Info
+    </p>
+    <p className="mt-3 text-2xl font-semibold tracking-tight">
+      Profiles, notes, and document-ready references
+    </p>
+    <p className="mt-3 text-sm leading-7 text-zinc-600">
+      Start here when you want personal or structured information pages with a calmer reading rhythm.
+    </p>
+  </a>
+
+  <a
+    href="/docs/music/intro"
+    className="block rounded-[1.75rem] border border-zinc-900/10 bg-white/70 p-6 text-zinc-950 no-underline shadow-[0_20px_60px_rgba(20,20,20,0.08)] transition hover:-translate-y-1 hover:bg-white"
+  >
+    <p className="text-xs font-semibold tracking-[0.28em] text-zinc-400 uppercase">
+      Music
+    </p>
+    <p className="mt-3 text-2xl font-semibold tracking-tight">
+      Music-oriented pages with the same visual voice
+    </p>
+    <p className="mt-3 text-sm leading-7 text-zinc-600">
+      Dive into music content when you want category-driven pages that still feel aligned with the landing style.
+    </p>
+  </a>
+</div>

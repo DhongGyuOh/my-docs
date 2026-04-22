@@ -1,4 +1,4 @@
-export default {
+const meta = {
   index: {
     title: "Donggyu Docs",
   },
@@ -9,3 +9,5 @@ export default {
     title: "음악",
   },
 };
+
+export default meta;
